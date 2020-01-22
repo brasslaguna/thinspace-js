@@ -1,29 +1,38 @@
 
-export { Buffer } from "./gl/buffer";
-export { Framebuffer } from "./gl/framebuffer";
-export { Renderbuffer } from "./gl/renderbuffer";
-export { Texture } from "./gl/texture";
-export { Shader } from "./gl/shader";
+const { Plane, PlaneBuffer } = require("./shape/plane");
+const { Sphere, SphereBuffer } = require("./shape/sphere");
 
-export { Program } from "./glhelper/program";
-export { Mesh } from "./glhelper/mesh";
-export { Model } from "./glhelper/model";
-export { View } from "./glhelper/view";
-export { Light } from "./glhelper/light";
-export { Camera } from "./glhelper/camera";
-export { PassPipeline } from "./glhelper/passPipeline";
-export { PostProcessor } from "./glhelper/postProcessor";
-export { FramebufferTextureConfig } from "./glhelper/framebufferTextureConfig";
+module.exports = {
 
-export { Plane, PlaneBuffer } from "./shape/plane";
-export { Sphere, SphereBuffer } from "./shape/sphere";
-export { Cube } from "./shape/cube";
-export { Cone } from "./shape/cone";
-export { Cylinder } from "./shape/cylinder";
-export { Path } from "./shape/path";
+	Buffer: require("./gl/buffer").Buffer,
+	Framebuffer: require("./gl/framebuffer").Framebuffer,
+	Renderbuffer: require("./gl/renderbuffer").Renderbuffer,
+	Texture: require("./gl/texture").Texture,
+	Shader: require("./gl/shader").Shader,
 
-export { Transformation } from "./util/transformation";
-export { Timer } from "./util/timer";
-export { math } from "./util/math";
+	Program: require("./glhelper/program").Program,
+	Mesh: require("./glhelper/mesh").Mesh,
+	Model: require("./glhelper/model").Model,
+	View: require("./glhelper/view").View,
+	Light: require("./glhelper/light").Light,
+	Camera: require("./glhelper/camera").Camera,
+	PassPipeline: require("./glhelper/passPipeline").PassPipeline,
+	PostProcessor: require("./glhelper/postProcessor").PostProcessor,
+	FramebufferTextureConfig: require("./glhelper/framebufferTextureConfig").FramebufferTextureConfig,
 
-export { Context } from "./helper/context";
+	Plane,
+	PlaneBuffer,
+	Sphere, 
+	SphereBuffer,
+	Cube: require("./shape/cube").Cube,
+	Cone: require("./shape/cone").Cone,
+	Cylinder: require("./shape/cylinder").Cylinder,
+	Path: require("./shape/path").Path,
+
+	Transformation: require("./util/transformation").Transformation,
+	Timer: require("./util/timer").Timer,
+	math: require("./util/math").math,
+
+	Context: require("./helper/context").Context
+
+};
