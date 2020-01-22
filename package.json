@@ -8,7 +8,8 @@
     "url": ""
   },
   "scripts": {
-    "build": "babel src --out-dir dist"
+    "prepare": "npm run build",
+    "build": "webpack src/index.js dist/index.js"
   },
   "dependencies": {
     "gl-matrix": "^2.3.2"
