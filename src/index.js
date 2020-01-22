@@ -1,8 +1,9 @@
 
-const { Plane, PlaneBuffer } = require("./shape/plane");
-const { Sphere, SphereBuffer } = require("./shape/sphere");
-
 module.exports = {
+
+	math: require("./util/math").math,
+	Transformation: require("./util/transformation").Transformation,
+	Timer: require("./util/timer").Timer,
 
 	Buffer: require("./gl/buffer").Buffer,
 	Framebuffer: require("./gl/framebuffer").Framebuffer,
@@ -20,18 +21,14 @@ module.exports = {
 	PostProcessor: require("./glhelper/postProcessor").PostProcessor,
 	FramebufferTextureConfig: require("./glhelper/framebufferTextureConfig").FramebufferTextureConfig,
 
-	Plane,
-	PlaneBuffer,
-	Sphere, 
-	SphereBuffer,
+	Plane: require("./shape/plane").Plane,
+	PlaneBuffer: require("./shape/plane").PlaneBuffer,
+	Sphere: require("./shape/sphere").Sphere, 
+	SphereBuffer: require("./shape/sphere").SphereBuffer, 
 	Cube: require("./shape/cube").Cube,
 	Cone: require("./shape/cone").Cone,
 	Cylinder: require("./shape/cylinder").Cylinder,
 	Path: require("./shape/path").Path,
-
-	Transformation: require("./util/transformation").Transformation,
-	Timer: require("./util/timer").Timer,
-	math: require("./util/math").math,
 
 	Context: require("./helper/context").Context
 
