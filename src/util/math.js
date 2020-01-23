@@ -48,4 +48,4 @@ const math = {
 
 };
 
-export { math };
+module.exports = { math };

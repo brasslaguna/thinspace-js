@@ -1,5 +1,5 @@
 
-import { Transformation } from "../util/transformation"
+const { Transformation } = require("../util/transformation");
 
 function Model() {
 
@@ -65,4 +65,4 @@ function Model() {
 
 }
 
-export { Model };
+module.exports = { Model };

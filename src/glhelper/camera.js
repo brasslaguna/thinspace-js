@@ -1,6 +1,6 @@
 
-import { Transformation } from "../util/transformation"
-import { mat4 } from "gl-matrix"
+const { Transformation } = require("../util/transformation")
+const { mat4 } = require("gl-matrix");
 
 function Camera({fov, aspect, near, far}) {
 
@@ -93,4 +93,4 @@ function Camera({fov, aspect, near, far}) {
 
 }
 
-export { Camera };
+module.exports = { Camera };

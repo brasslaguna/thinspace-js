@@ -1,5 +1,5 @@
 
-import { PassPipeline } from "./passPipeline"
+const { PassPipeline } = require("./passPipeline");
 
 function PostProcessor(context, width, height) {
 
@@ -152,4 +152,4 @@ function PostProcessor(context, width, height) {
 	);
 }
 
-export { PostProcessor };
+module.exports = { PostProcessor };

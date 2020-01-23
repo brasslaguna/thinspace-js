@@ -145,4 +145,4 @@ function View(context) {
 	);
 }
 
-export { View };
+module.exports = { View };

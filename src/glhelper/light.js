@@ -1,6 +1,6 @@
 
-import { Transformation } from "../util/transformation"
-import { mat4 } from "gl-matrix"
+const { Transformation } = require("../util/transformation");
+const { mat4 } = require("gl-matrix");
 
 function Light(transformation = Transformation()) {
 
@@ -36,4 +36,4 @@ function Light(transformation = Transformation()) {
 	);
 }
 
-export { Light };
+module.exports = { Light };

@@ -39,4 +39,4 @@ function Shader(gl, type, version) {
 	);
 }
 
-export { Shader };
+module.exports = { Shader };

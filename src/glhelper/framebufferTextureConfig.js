@@ -32,4 +32,4 @@ function FramebufferTextureConfig({ gl, format, internalFormat, type }) {
 
 };
 
-export { FramebufferTextureConfig };
+module.exports = { FramebufferTextureConfig };

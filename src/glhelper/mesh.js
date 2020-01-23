@@ -59,4 +59,4 @@ function Mesh(gl) {
 
 }
 
-export { Mesh };
+module.exports = { Mesh };

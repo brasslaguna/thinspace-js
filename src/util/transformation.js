@@ -1,5 +1,5 @@
 
-import { glMatrix, vec3, mat4, quat } from "gl-matrix"
+const { glMatrix, vec3, mat4, quat } = require("gl-matrix");
 
 function Transformation() {
 
@@ -64,4 +64,4 @@ function Transformation() {
 
 }
 
-export { Transformation };
+module.exports = { Transformation };

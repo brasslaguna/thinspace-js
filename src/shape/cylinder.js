@@ -1,8 +1,8 @@
 
-import { Mesh } from "../glhelper/mesh"
-import { Model } from "../glhelper/model"
-import { math } from "../util/math"
-import { Transformation } from "../util/transformation"
+const { Mesh } = require("../glhelper/mesh");
+const { Model } = require("../glhelper/model");
+const { math } = require("../util/math");
+const { Transformation } = require("../util/transformation");
 
 const Cylinder = ({context, res, height, segments = 1}) => {
 
@@ -287,4 +287,4 @@ const Band = ({origin, radius, res, height, taper = 1, segIndex = 0}) => {
 
 };
 
-export { Cylinder, Band, BodyMesh, CapMesh };
+module.exports = { Cylinder, Band, BodyMesh, CapMesh };

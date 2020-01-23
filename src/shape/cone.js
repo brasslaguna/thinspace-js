@@ -1,6 +1,6 @@
 
-import { Model } from "../glhelper/model"
-import { Band, BodyMesh, CapMesh } from "../shape/cylinder"
+const { Model } = require("../glhelper/model");
+const { Band, BodyMesh, CapMesh } = require("../shape/cylinder");
 
 const Cone = ({
 	context, 
@@ -68,4 +68,4 @@ const Cone = ({
 
 };
 
-export { Cone };
+module.exports = { Cone };

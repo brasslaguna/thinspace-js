@@ -69,4 +69,4 @@ function Texture(gl, target) {
 
 }
 
-export { Texture };
+module.exports = { Texture };

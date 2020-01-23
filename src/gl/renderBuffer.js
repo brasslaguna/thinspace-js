@@ -35,4 +35,4 @@ function Renderbuffer(gl, { internalFormat, width, height }) {
 
 }
 
-export { Renderbuffer };
+module.exports = { Renderbuffer };

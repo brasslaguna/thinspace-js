@@ -1,10 +1,10 @@
 
-import { Mesh } from "../glhelper/mesh"
-import { Model } from "../glhelper/model"
-import { Transformation } from "../util/transformation"
-import { PlaneBuffer } from "./plane"
+const { Mesh } = require("../glhelper/mesh");
+const { Model } = require("../glhelper/model");
+const { Transformation } = require("../util/transformation");
+const { PlaneBuffer } = require("./plane");
 
-import { vec3 } from "gl-matrix"
+const { vec3 } = require("gl-matrix");
 
 const Cube = ({ context, res = 2 }) => {
 
@@ -139,4 +139,4 @@ const Cube = ({ context, res = 2 }) => {
 
 };
 
-export { Cube };
+module.exports = { Cube };

@@ -74,4 +74,4 @@ function Timer(fps = 24) {
 	
 }
 
-export { Timer }
+module.exports = { Timer }

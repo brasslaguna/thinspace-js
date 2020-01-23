@@ -1,10 +1,10 @@
 
-import { Buffer } from "../gl/buffer"
-import { Framebuffer } from "../gl/framebuffer"
-import { Renderbuffer } from "../gl/renderbuffer"
-import { Texture } from "../gl/texture"
-import { Program } from "../gl/program"
-import { Shader } from "../gl/shader"
+const { Buffer } = require("../gl/buffer");
+const { Framebuffer } = require("../gl/framebuffer");
+const { Renderbuffer } = require("../gl/renderbuffer");
+const { Texture } = require("../gl/texture");
+const { Program } = require("../gl/program");
+const { Shader } = require("../gl/shader");
 
 const Context = (canvas, types = [], attributes = {}) => {
 
@@ -188,4 +188,4 @@ const Extensions = (context) => {
 	);
 };
 
-export { Context };
+module.exports = { Context };

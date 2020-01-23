@@ -56,4 +56,4 @@ function Framebuffer(gl) {
 
 }
 
-export { Framebuffer };
+module.exports = { Framebuffer };

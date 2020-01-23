@@ -1,6 +1,6 @@
 
-import { Mesh } from "../glhelper/mesh"
-import { Model } from "../glhelper/model"
+const { Mesh } = require("../glhelper/mesh");
+const { Model } = require("../glhelper/model");
 
 const Path = ({ context, vertices = []}) => {
 
@@ -45,4 +45,4 @@ const Path = ({ context, vertices = []}) => {
 
 };
 
-export { Path };
+module.exports = { Path };

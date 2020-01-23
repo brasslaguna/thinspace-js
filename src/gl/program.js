@@ -128,4 +128,4 @@ const Program = (gl) => {
 	);
 }
 
-export { Program };
+module.exports = { Program };

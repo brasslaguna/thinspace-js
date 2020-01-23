@@ -128,4 +128,4 @@ function Buffer(gl, target, extensions) {
 
 }
 
-export { Buffer };
+module.exports = { Buffer };

@@ -49,4 +49,4 @@ function Program({ context, vertex, fragment }) {
 
 };
 
-export { Program };
+module.exports = { Program };

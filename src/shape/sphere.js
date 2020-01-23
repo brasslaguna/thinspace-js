@@ -1,6 +1,6 @@
 
-import { Mesh } from "../glhelper/mesh"
-import { Model } from "../glhelper/model"
+const { Mesh } = require("../glhelper/mesh");
+const { Model } = require("../glhelper/model");
 
 const Sphere = ({context, resX, resY}) => {
 
@@ -162,4 +162,4 @@ const SphereBuffer = ({resX, resY}) => {
 
 };
 
-export { Sphere, SphereBuffer };
+module.exports = { Sphere, SphereBuffer };

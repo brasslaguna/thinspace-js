@@ -1,9 +1,9 @@
 
 module.exports = {
 
-	math: require("./util/math").math,
 	Transformation: require("./util/transformation").Transformation,
 	Timer: require("./util/timer").Timer,
+	math: require("./util/math").math,
 
 	Buffer: require("./gl/buffer").Buffer,
 	Framebuffer: require("./gl/framebuffer").Framebuffer,
@@ -23,8 +23,8 @@ module.exports = {
 
 	Plane: require("./shape/plane").Plane,
 	PlaneBuffer: require("./shape/plane").PlaneBuffer,
-	Sphere: require("./shape/sphere").Sphere, 
-	SphereBuffer: require("./shape/sphere").SphereBuffer, 
+	Sphere: require("./shape/sphere").Sphere,
+	SphereBuffer: require("./shape/sphere").SphereBuffer,
 	Cube: require("./shape/cube").Cube,
 	Cone: require("./shape/cone").Cone,
 	Cylinder: require("./shape/cylinder").Cylinder,
@@ -32,4 +32,4 @@ module.exports = {
 
 	Context: require("./helper/context").Context
 
-};
+}

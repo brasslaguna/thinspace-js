@@ -131,4 +131,4 @@ function PassPipeline(context, width, height) {
 	);
 }
 
-export { PassPipeline };
+module.exports = { PassPipeline };
