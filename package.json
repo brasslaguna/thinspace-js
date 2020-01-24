@@ -1,15 +1,11 @@
 {
   "name": "thinspace-js",
-  "main": "dist/index.js",
+  "main": "index.js",
   "version": "1.0.0",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
-  },
-  "scripts": {
-    "prepare": "npm run build",
-    "build": "webpack src/index.js dist/index.js"
+    "url": "https://github.com/brasslaguna/thinspace-js"
   },
   "dependencies": {
     "gl-matrix": "^2.3.2"

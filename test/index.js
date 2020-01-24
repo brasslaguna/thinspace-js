@@ -1,5 +1,5 @@
 
-import * as TS from "../src/index.js"
+import * as TS from "../index.js"
 import { glMatrix, mat4, quat } from "gl-matrix"
 
 /*
