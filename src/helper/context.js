@@ -122,6 +122,16 @@ const Context = (canvas, types = [], attributes = {}) => {
 
 					});
 
+				try {
+
+					context.getExtension("WEBGL_lose_context").loseContext();
+
+				} catch(e) {
+
+					console.error(e)
+
+				}
+
 			}
 		},
 		{
