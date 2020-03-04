@@ -86,11 +86,13 @@ function View(context) {
 
 			in vec2 texture_;
 
+			out vec4 color;
+
 			uniform sampler2D texture0;
 
 			void main() {
 
-				gl_FragColor = texture(texture0, texture_);
+				color = texture(texture0, texture_);
 
 			} 
 		`;
