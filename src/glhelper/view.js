@@ -65,12 +65,12 @@ function View(context) {
 		`
 			precision highp float;
 
-			attribute vec3 position;
-			attribute vec2 texture;
+			in vec3 position;
+			in vec2 texture;
 
 			uniform mat4 model;
 
-			varying vec2 texture_;
+			out vec2 texture_;
 
 			void main() {
 
@@ -84,13 +84,13 @@ function View(context) {
 		`
 			precision highp float;
 
-			varying vec2 texture_;
+			in vec2 texture_;
 
 			uniform sampler2D texture0;
 
 			void main() {
 
-				gl_FragColor = texture2D(texture0, texture_);
+				gl_FragColor = texture(texture0, texture_);
 
 			} 
 		`;

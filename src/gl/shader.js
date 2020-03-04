@@ -22,7 +22,9 @@ function Shader(gl, type, version) {
 			source: {
 				set: function(value) {
 
-					const format = `${Number(version) * 100}`.slice(0, 3);
+					//const format = `${Number(version) * 100}`.slice(0, 3);
+
+					const format = `${version}`;
 
 					value = `#version ${format}\n ${value}`;
 
