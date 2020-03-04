@@ -1,7 +1,7 @@
 
 function Mesh(gl) {
 
-	const vao = (gl.createVertexArray || function() {})(),
+	const vao = gl.createVertexArray(),
 		  buffers = [];
 		  
 	let mode = gl.TRIANGLES;

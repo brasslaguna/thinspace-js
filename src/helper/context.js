@@ -66,7 +66,17 @@ const Context = (canvas, types = [], attributes = {}) => {
 			},
 
 			shadingLanguageVersion: () => {
-				return info.shadingLanguageVersion.match(/webgl\sglsl\ses\s(\d[.]\d+|\d+)/i)[1];
+
+				switch(types[0]) {
+
+					case "webgl": return "100";
+
+					case "webgl2": return "300 es";
+
+				}
+
+				//return info.shadingLanguageVersion.match(/webgl\sglsl\ses\s(\d[.]\d+|\d+)/i)[1];
+			
 			}
 
 		}
@@ -189,9 +199,12 @@ const Extensions = (context) => {
 					  ext = registered[extName];
 
 				if(!ext)
+
 					registered[extName] = context.getExtension(extName);
 
-				registered[extName][name].apply(registered[extName], params);
+				if(registered[extName])
+
+					registered[extName][name].apply(registered[extName], params);
 
 			}
 		}
